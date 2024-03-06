@@ -7,6 +7,15 @@ const contacts = [
     { name: "Liz", number: "(32) 99999-9999" },
     { name: "Beatriz", number: "(32) 99999-9999" },
     { name: "Luna Maria", number: "(32) 99999-9999" },
+    { name: "Maria", number: "(32) 99999-9999" },
+    { name: "Joana", number: "(32) 99999-9999" },
+    { name: "Pedro", number: "(32) 99999-9999" },
+    { name: "Marisia", number: "(32) 99999-9999" },
+    { name: "Heitor", number: "(32) 99999-9999" },
+    { name: "Cacilda", number: "(32) 99999-9999" },
+    { name: "Carminha", number: "(32) 99999-9999" },
+    { name: "Weliton", number: "(32) 99999-9999" },
+    { name: "Elizi", number: "(32) 99999-9999" },
 ]
 
 function search() {
