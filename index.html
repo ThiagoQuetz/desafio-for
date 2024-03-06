@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Buscador de contato</title>
+</head>
+
+<body>
+    <main>
+        <section class="box-logo">
+            <img src="./assets/logo.gif" rel="logo-pessoa-procurando">
+        </section>
+        <section class="box-title">
+            <h1>Buscador de Contato</h1>
+        </section>
+        <section class="box-input">
+            <input placeholder="Digite o nome do contato">
+        </section>
+        <section class="box-title-2">
+            <h6>Contato Encontrado:</h6>
+        </section>
+        <section class="box-result">
+
+            <br>
+            <p></p>
+        </section>
+        <section class="box-button">
+            <button onclick="search()">Procurar Contato</button>
+        </section>
+    </main>
+</body>
+<script>
+
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contacts = [
+        { name: "Thiago", number: "(32) 99999-9999" },
+        { name: "Michelly", number: "(32) 99999-9999" },
+        { name: "Liz", number: "(32) 99999-9999" },
+        { name: "Beatriz", number: "(32) 99999-9999" },
+        { name: "Luna Maria", number: "(32) 99999-9999" },
+    ]
+
+    function search() {
+
+        for (let i = 0; i < contacts.length; i++) {
+
+            if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
+                p.innerHTML = `Nome: ${contacts[i].name} <br> Tel: ${contacts[i].number}`
+
+                break
+            } else {
+                p.innerHTML = "Contato não encontrado"
+            }
+        }
+    }
+
+</script>
+
+</html>
